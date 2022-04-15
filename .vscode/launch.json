@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "args": [
+                "${workspaceFolder}/ccx_test/complex.cci",
+                "${workspaceFolder}/ccx_test/complex.ccx",
+                "${workspaceFolder}/ccx_test/date.cci",
+                "${workspaceFolder}/ccx_test/date.ccx",
+                "${workspaceFolder}/ccx_test/hello_world.ccx",
+                "${workspaceFolder}/ccx_test/list.cci",
+                "${workspaceFolder}/ccx_test/list.ccx",
+                "${workspaceFolder}/ccx_test/natural.cci",
+                "${workspaceFolder}/ccx_test/natural.ccx",
+                "${workspaceFolder}/ccx_test/trie.cci",
+                "${workspaceFolder}/ccx_test/trie.ccx",
+                "${workspaceFolder}/ccx_test/widget.cci",
+                "${workspaceFolder}/ccx_test/widget.ccx",
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "gdb",
+                "program": "${workspaceFolder}/bin/parse"
+            },
+            "osx": {
+                "MIMode": "lldb",
+                "miDebuggerPath": "lldb-mi",
+                "program": "${workspaceFolder}/bin/parse"
+            },
+            "windows": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "gdb.exe",
+                "program": "${workspaceFolder}/bin/parse.exe"
+            },
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/parse"
+        }
+    ]
+}

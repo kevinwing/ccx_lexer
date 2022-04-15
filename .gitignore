@@ -1,0 +1,8 @@
+# object files
+*.o
+
+# executable directory
+bin/
+
+# output files
+*.lexer.out
